@@ -1,7 +1,7 @@
 #!/usr/bin/env import datetime import time
 import os
 import datetime
-from sunrise_sunset_linkoping import next_sunset, next_sunrise, prev_sunset, prev_sunrise
+from sunrise_sunset_linkoping import next_sunset, next_sunrise, prev_sunset, prev_sunrise, next_sunset
 
 def is_time_to_turn_on(time) :
 	if is_time_to_turn_on_sunset(time) == True or is_time_to_turn_on_sunrise(time) == True :
@@ -46,6 +46,6 @@ def is_time_to_turn_off_sunrise(time) :
 
 def is_time_to_turn_on_off(time, turn_on_off_time) :	
 	threshold = datetime.timedelta(minutes=30)
-	if turn_on_off_time <= time  and time < (turn_on_off_time + threshold) :
+	if turn_on_off_time <= time  and time <= (turn_on_off_time + threshold) :
 		return True
 	return False
