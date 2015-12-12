@@ -19,7 +19,7 @@ humidity = extract_text("humidity=(.+?)\s", sensor_out)
 
 time = extract_text("time=(.+?:.+?:.+?)\s", sensor_out)
 
-fo = open("temperature_log_file.txt", "ab")
+fo = open("HOME/pi/itchy-wookiee/python/update_sensor_data/temperature_log_file.txt", "ab")
 fo.write("{id=" +  sensor_id + "} {temperature=" + sensor_temperature +"C} {humidity=" + humidity + "} {time=" + time +"} \n" )
 fo.close()
 
