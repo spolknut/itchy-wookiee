@@ -6,7 +6,7 @@ from subprocess import PIPE, Popen
 from relay_schedule import is_time_to_turn_on, is_time_to_turn_off
 
 def update_relay_states(flag) :
-	log_change_to_file("flag: -", flag, " time: ", datetime.datetime.now())
+	log_change_to_file("flag: -" + flag + " time: " + datetime.datetime.now())
 	os.system("tdtool -" + flag + " 1")
 	os.system("tdtool -" + flag + " 2")
 	os.system("tdtool -" + flag + " 3")
