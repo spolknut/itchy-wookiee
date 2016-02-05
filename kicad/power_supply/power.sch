@@ -1,0 +1,248 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:root-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date "5 feb 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_2 P?
+U 1 1 56AFC730
+P 1700 2350
+F 0 "P?" V 1650 2350 40  0000 C CNN
+F 1 "CONN_2" V 1750 2350 40  0000 C CNN
+F 2 "" H 1700 2350 60  0000 C CNN
+F 3 "" H 1700 2350 60  0000 C CNN
+	1    1700 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 56AFC77F
+P 1700 3950
+F 0 "P?" V 1650 3950 40  0000 C CNN
+F 1 "CONN_2" V 1750 3950 40  0000 C CNN
+F 2 "" H 1700 3950 60  0000 C CNN
+F 3 "" H 1700 3950 60  0000 C CNN
+	1    1700 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FUSE F?
+U 1 1 56AFC798
+P 2250 2800
+F 0 "F?" H 2350 2850 40  0000 C CNN
+F 1 "FUSE" H 2150 2750 40  0000 C CNN
+F 2 "~" H 2250 2800 60  0000 C CNN
+F 3 "~" H 2250 2800 60  0000 C CNN
+	1    2250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L TRANSFO2 T?
+U 1 1 56AFC7B1
+P 3000 3350
+F 0 "T?" H 3000 3850 70  0000 C CNN
+F 1 "TRANSFO2" H 3000 2850 70  0000 C CNN
+F 2 "~" H 3000 3350 60  0000 C CNN
+F 3 "~" H 3000 3350 60  0000 C CNN
+	1    3000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2450 2250 2450
+Wire Wire Line
+	2250 2450 2250 2550
+Wire Wire Line
+	2250 3050 2250 4050
+Wire Wire Line
+	2250 3150 2600 3150
+Wire Wire Line
+	2050 2250 2450 2250
+Wire Wire Line
+	2450 2250 2450 3850
+Wire Wire Line
+	2450 3550 2600 3550
+Wire Wire Line
+	2450 3850 2050 3850
+Connection ~ 2450 3550
+Wire Wire Line
+	2250 4050 2050 4050
+Connection ~ 2250 3150
+$Comp
+L DIODESCH D?
+U 1 1 56AFC8D4
+P 4000 2050
+F 0 "D?" H 4000 2150 40  0000 C CNN
+F 1 "DIODESCH" H 4000 1950 40  0000 C CNN
+F 2 "~" H 4000 2050 60  0000 C CNN
+F 3 "~" H 4000 2050 60  0000 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 56B1037F
+P 4000 2350
+F 0 "D?" H 4000 2450 40  0000 C CNN
+F 1 "DIODESCH" H 4000 2250 40  0000 C CNN
+F 2 "~" H 4000 2350 60  0000 C CNN
+F 3 "~" H 4000 2350 60  0000 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 1850 1    60   Input ~ 0
+Vh1
+Wire Wire Line
+	4300 1850 4300 2350
+Wire Wire Line
+	4300 2050 4200 2050
+Wire Wire Line
+	3400 1400 3400 2950
+Wire Wire Line
+	3400 2050 3800 2050
+Wire Wire Line
+	3400 3250 3550 3250
+Wire Wire Line
+	3550 3250 3550 2350
+Wire Wire Line
+	3550 2350 3800 2350
+Wire Wire Line
+	4300 2350 4200 2350
+Connection ~ 4300 2050
+$Comp
+L C C?
+U 1 1 56B10498
+P 5050 1850
+F 0 "C?" H 5050 1950 40  0000 L CNN
+F 1 "C" H 5056 1765 40  0000 L CNN
+F 2 "~" H 5088 1700 30  0000 C CNN
+F 3 "~" H 5050 1850 60  0000 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56B104A5
+P 5050 2900
+F 0 "C?" H 5050 3000 40  0000 L CNN
+F 1 "C" H 5056 2815 40  0000 L CNN
+F 2 "~" H 5088 2750 30  0000 C CNN
+F 3 "~" H 5050 2900 60  0000 C CNN
+	1    5050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BRIDGE D?
+U 1 1 56B10F7D
+P 5200 6000
+F 0 "D?" H 5200 6050 70  0000 C CNN
+F 1 "BRIDGE" H 5200 5950 70  0000 C CNN
+F 2 "~" H 5200 6000 60  0000 C CNN
+F 3 "~" H 5200 6000 60  0000 C CNN
+	1    5200 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1400 7150 1400
+Connection ~ 3400 2050
+Wire Wire Line
+	5050 1400 5050 1650
+Connection ~ 5050 1400
+Wire Wire Line
+	5050 3100 5050 3300
+Wire Wire Line
+	6100 3200 6100 3300
+Wire Wire Line
+	5050 3300 7150 3300
+Wire Wire Line
+	5050 2050 5050 2700
+Wire Wire Line
+	5250 2350 5050 2350
+Connection ~ 5050 2350
+$Comp
+L C C?
+U 1 1 56B11152
+P 7150 1750
+F 0 "C?" H 7150 1850 40  0000 L CNN
+F 1 "C" H 7156 1665 40  0000 L CNN
+F 2 "~" H 7188 1600 30  0000 C CNN
+F 3 "~" H 7150 1750 60  0000 C CNN
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56B1118B
+P 7150 2900
+F 0 "C?" H 7150 3000 40  0000 L CNN
+F 1 "C" H 7156 2815 40  0000 L CNN
+F 2 "~" H 7188 2750 30  0000 C CNN
+F 3 "~" H 7150 2900 60  0000 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BRIDGE D?
+U 1 1 56B1059B
+P 6100 2350
+F 0 "D?" H 6100 2400 70  0000 C CNN
+F 1 "BRIDGE" H 6100 2300 70  0000 C CNN
+F 2 "~" H 6100 2350 60  0000 C CNN
+F 3 "~" H 6100 2350 60  0000 C CNN
+	1    6100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1400 6100 1500
+Wire Wire Line
+	7150 1400 7150 1550
+Connection ~ 6100 1400
+Wire Wire Line
+	7150 3300 7150 3100
+Connection ~ 6100 3300
+Wire Wire Line
+	7150 2700 7150 1950
+Wire Wire Line
+	6950 2350 7150 2350
+Connection ~ 7150 2350
+$EndSCHEMATC
