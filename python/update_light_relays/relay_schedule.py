@@ -49,3 +49,12 @@ def is_time_to_turn_on_off(time, turn_on_off_time) :
 	if turn_on_off_time <= time  and time <= (turn_on_off_time + threshold) :
 		return True
 	return False
+
+def growlight_is_time_to_turn_off(time) :
+	turn_off_time = datetime.datetime.now().replace(hour=16, minute=30, second=0, microsecond=0)	
+	return is_time_to_turn_on_off(time, turn_off_time)
+
+def growlight_is_time_to_turn_on(time) :
+	turn_on_time = datetime.datetime.now().replace(hour=23, minute=30, second=0, microsecond=0)	
+	return is_time_to_turn_on_off(time, turn_on_time)
+

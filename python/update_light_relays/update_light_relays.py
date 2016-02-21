@@ -5,11 +5,14 @@ from subprocess import PIPE, Popen
 
 from relay_schedule import is_time_to_turn_on, is_time_to_turn_off
 
-def update_relay_states(flag) :
+def update_sunset_light_relay_states(flag) :
 	os.system("tdtool -" + flag + " 1")
 	os.system("tdtool -" + flag + " 2")
 	os.system("tdtool -" + flag + " 3")
+
+def update_grow_light_states(flag) :
 	os.system("tdtool -" + flag + " 4")
+
 
 def log_change_to_file(message) :
 	print message
@@ -19,7 +22,7 @@ def log_change_to_file(message) :
 	fo.write("time=" + datetime.datetime.now().strftime("%Y%m%d-%H:%M:%S") + "; " + message + "\n" )
 	fo.close()
 
-def run_relay_schedule(time) :
+def run_sunset_relay_schedule(time) :
 	print "time: -", time 
 	
 	if is_time_to_turn_on(time) == True :
@@ -37,5 +40,24 @@ def run_relay_schedule(time) :
 		print "Time to slack!"
 		return ""
 
+def run_growlight_relay_schedule(time) :
+	print "time: -", time 
+	
+	if growlight_is_time_to_turn_on(time) == True :
+		print "Time to turn growlight ON!"
+		log_change_to_file("gl state=ON")
+		update_grow_light_states("n")
+		return "n"
+	elif growlight_is_time_to_turn_off(time) == True :
+		print "Time to turn growlight OFF!"
+		log_change_to_file("gl state=OFF")
+		update_grow_light_states("f")
+		return "f"
+	else :
+		log_change_to_file("-")
+		print "Time to slack!"
+		return ""
+
 now = datetime.datetime.now()
-run_relay_schedule(now)
+run_sunset_relay_schedule(now)
+run_growlight_relay_schedule(now)
