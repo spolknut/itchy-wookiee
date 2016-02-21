@@ -36,7 +36,6 @@ def run_sunset_relay_schedule(time) :
 		update_relay_states("f")
 		return "f"
 	else :
-		log_change_to_file("-")
 		print "Time to slack!"
 		return ""
 
@@ -54,7 +53,6 @@ def run_growlight_relay_schedule(time) :
 		update_grow_light_states("f")
 		return "f"
 	else :
-		log_change_to_file("-")
 		print "Time to slack!"
 		return ""
 

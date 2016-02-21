@@ -27,7 +27,7 @@ def is_time_to_turn_off_sunset(time) :
 
 	# Friday, Saturday
 	if weekday == 4 or weekday == 5 :
-		turn_off_sunset = datetime.datetime.now().replace(hour=23, minute=59, second=0, microsecond=0)
+		turn_off_sunset = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
 	# Sunday
 	elif weekday == 6 :
 		turn_off_sunset = datetime.datetime.now().replace(hour=10, minute=0, second=0, microsecond=0)
