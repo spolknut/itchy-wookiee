@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:my_library
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:my_transistors
 LIBS:bench_power_supply-cache
 EELAYER 27 0
 EELAYER END
@@ -36,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title ""
-Date "15 feb 2016"
+Date "10 mar 2016"
 Rev ""
 Comp ""
 Comment1 ""
