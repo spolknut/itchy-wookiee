@@ -36,9 +36,9 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title "ROOT"
-Date "10 mar 2016"
+Date "24 apr 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -67,8 +67,8 @@ $EndSheet
 $Sheet
 S 4550 1400 1600 4550
 U 56BA34F4
-F0 "PRE_REGULATOR" 50
-F1 "pre_regulator.sch" 50
+F0 "PRE_REGULATOR_MODULE" 50
+F1 "pre_regulator_module.sch" 50
 F2 "+5V_K3.1" I R 6150 4500 60 
 F3 "SyncIn_K3.2" I R 6150 4650 60 
 F4 "PGnd_K3.3" I R 6150 4800 60 
@@ -85,7 +85,7 @@ F14 "PGnd_K1.11" O R 6150 3150 60
 F15 "PGnd_K1.10" O R 6150 3000 60 
 F16 "PGnd_K1.13" O R 6150 3450 60 
 F17 "PGnd_K1.12" O R 6150 3300 60 
-F18 "Power_K1.9" O R 6150 2700 60 
+F18 "PowerOnOff_K1.9" O R 6150 2700 60 
 F19 "V-_K1.4" O R 6150 1950 60 
 F20 "V+_K1.6" O R 6150 2250 60 
 F21 "VIn+_K1.7" O R 6150 2400 60 
