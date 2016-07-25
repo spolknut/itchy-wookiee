@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0  Date: Mon 22 Feb 2016 09:39:52 PM CET
+#
+$CMP IRF5210PBF
+D -100V Vds, -40A Id, P-Channel MOSFET, TO-220AB
+K P-Channel MOSFET Logic Level
+F http://www.irf.com/product-info/datasheets/data/irf5210pbf.pdf
+$ENDCMP
+#
+$CMP MMBT5401
+D -150V Vce, 0.6A Ic, PNP, Small Signal Transistor, SOT-23
+K MMBT5401 PNP Transistor
+F http://www.mouser.com/ds/2/149/MMBT5401-114604.pdf
+$ENDCMP
+#
+#End Doc Library

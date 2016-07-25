@@ -1,0 +1,373 @@
+EESchema Schematic File Version 2
+LIBS:bench_power_supply-rescue
+LIBS:my_library
+LIBS:my_transistors
+LIBS:bench_power_supply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date "11 may 2016"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7400 2175 0    60   Output ~ 0
+POut
+Text HLabel 7400 2425 0    60   Output ~ 0
+PGnd
+Text HLabel 6150 2175 2    60   Output ~ 0
+VBias
+Text HLabel 1650 1700 0    60   Input ~ 0
+AC_IN+
+Text HLabel 1650 2625 0    60   Input ~ 0
+AC_IN-
+Text HLabel 1700 3850 0    60   Input ~ 0
+PowerOnOff
+$Comp
+L STPS15H100 D2
+U 1 1 57227EBF
+P 2625 1950
+F 0 "D2" H 2575 2100 50  0000 L CNN
+F 1 "STPS15H100" H 2525 1800 25  0000 L CNN
+F 2 "" V 2595 2030 50  0000 C CNN
+F 3 "" V 2595 2030 50  0000 C CNN
+	1    2625 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L STPS15H100 D4
+U 1 1 57227ECC
+P 2625 2400
+F 0 "D4" H 2575 2550 50  0000 L CNN
+F 1 "STPS15H100" H 2525 2250 25  0000 L CNN
+F 2 "" V 2595 2480 50  0000 C CNN
+F 3 "" V 2595 2480 50  0000 C CNN
+	1    2625 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L STPS15H100 D3
+U 1 1 57227ED2
+P 2125 2400
+F 0 "D3" H 2075 2550 50  0000 L CNN
+F 1 "STPS15H100" H 2025 2250 25  0000 L CNN
+F 2 "" V 2095 2480 50  0000 C CNN
+F 3 "" V 2095 2480 50  0000 C CNN
+	1    2125 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L STPS15H100 D1
+U 1 1 57227ED8
+P 2125 1950
+F 0 "D1" H 2075 2100 50  0000 L CNN
+F 1 "STPS15H100" H 2000 1800 25  0000 L CNN
+F 2 "" V 2095 2030 50  0000 C CNN
+F 3 "" V 2095 2030 50  0000 C CNN
+	1    2125 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 572285F5
+P 3000 2500
+F 0 "R1" H 3030 2520 50  0000 L CNN
+F 1 "18k" H 3030 2460 50  0000 L CNN
+F 2 "" H 3000 2500 50  0000 C CNN
+F 3 "" H 3000 2500 50  0000 C CNN
+	1    3000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C1
+U 1 1 57228697
+P 3250 2500
+AR Path="/57228697" Ref="C1"  Part="1" 
+AR Path="/56BA34F4/571E8A96/57228697" Ref="C1"  Part="1" 
+F 0 "C1" H 3260 2570 50  0000 L CNN
+F 1 "3m3" H 3260 2420 50  0000 L CNN
+F 2 "" H 3250 2500 50  0000 C CNN
+F 3 "" H 3250 2500 50  0000 C CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PGND #PWR?
+U 1 1 57228B2B
+P 3000 2950
+F 0 "#PWR?" H 3000 2700 50  0001 C CNN
+F 1 "PGND" H 3000 2800 50  0000 C CNN
+F 2 "" H 3000 2950 50  0000 C CNN
+F 3 "" H 3000 2950 50  0000 C CNN
+	1    3000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5722910A
+P 3975 2500
+AR Path="/5722910A" Ref="C2"  Part="1" 
+AR Path="/56BA34F4/571E8A96/5722910A" Ref="C3"  Part="1" 
+F 0 "C3" H 3985 2570 50  0000 L CNN
+F 1 "4u7" H 3985 2420 50  0000 L CNN
+F 2 "" H 3975 2500 50  0000 C CNN
+F 3 "" H 3975 2500 50  0000 C CNN
+	1    3975 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 57229128
+P 4225 2500
+AR Path="/57229128" Ref="C3"  Part="1" 
+AR Path="/56BA34F4/571E8A96/57229128" Ref="C4"  Part="1" 
+F 0 "C4" H 4235 2570 50  0000 L CNN
+F 1 "4u7" H 4235 2420 50  0000 L CNN
+F 2 "" H 4225 2500 50  0000 C CNN
+F 3 "" H 4225 2500 50  0000 C CNN
+	1    4225 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 5722912E
+P 4450 2500
+AR Path="/5722912E" Ref="C4"  Part="1" 
+AR Path="/56BA34F4/571E8A96/5722912E" Ref="C5"  Part="1" 
+F 0 "C5" H 4460 2570 50  0000 L CNN
+F 1 "4u7" H 4460 2420 50  0000 L CNN
+F 2 "" H 4450 2500 50  0000 C CNN
+F 3 "" H 4450 2500 50  0000 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1700 2350 1700
+Wire Wire Line
+	2475 2025 2550 2025
+Wire Wire Line
+	2475 1875 2550 1875
+Wire Wire Line
+	1650 2625 2325 2625
+Wire Wire Line
+	2475 2325 2550 2325
+Wire Wire Line
+	2475 2475 2550 2475
+Wire Wire Line
+	2225 1950 2475 1950
+Connection ~ 2475 1950
+Wire Wire Line
+	2225 2400 2475 2400
+Connection ~ 2475 2400
+Wire Wire Line
+	2050 1875 1975 1875
+Wire Wire Line
+	1975 1875 1975 2025
+Wire Wire Line
+	1975 2025 2050 2025
+Wire Wire Line
+	1975 1950 1850 1950
+Wire Wire Line
+	1850 1950 1850 2825
+Wire Wire Line
+	1850 2400 1975 2400
+Wire Wire Line
+	1975 2325 1975 2475
+Wire Wire Line
+	1975 2325 2050 2325
+Connection ~ 1975 1950
+Wire Wire Line
+	1975 2475 2050 2475
+Connection ~ 1975 2400
+Wire Wire Line
+	1850 2825 4450 2825
+Connection ~ 1850 2400
+Wire Wire Line
+	2325 2625 2325 2400
+Connection ~ 2325 2400
+Wire Wire Line
+	2475 2325 2475 2475
+Wire Wire Line
+	2475 1875 2475 2025
+Wire Wire Line
+	2350 1700 2350 1950
+Connection ~ 2350 1950
+Wire Wire Line
+	2725 1950 2875 1950
+Wire Wire Line
+	2875 1950 2875 2400
+Wire Wire Line
+	2875 2400 2725 2400
+Wire Wire Line
+	2875 2175 4800 2175
+Connection ~ 2875 2175
+Wire Wire Line
+	3250 2825 3250 2600
+Wire Wire Line
+	3250 2175 3250 2400
+Wire Wire Line
+	3000 2400 3000 2175
+Connection ~ 3000 2175
+Wire Wire Line
+	3000 2600 3000 2950
+Connection ~ 3000 2825
+Wire Wire Line
+	3975 2825 3975 2600
+Connection ~ 3250 2825
+Wire Wire Line
+	4225 2825 4225 2600
+Connection ~ 3975 2825
+Wire Wire Line
+	4450 2825 4450 2600
+Connection ~ 4225 2825
+Wire Wire Line
+	3975 2175 3975 2400
+Connection ~ 3250 2175
+Wire Wire Line
+	4225 2175 4225 2400
+Connection ~ 3975 2175
+Wire Wire Line
+	4450 2175 4450 2400
+Connection ~ 4225 2175
+$Comp
+L D_Small D?
+U 1 1 572292CF
+P 4900 2175
+F 0 "D?" H 4850 2255 50  0000 L CNN
+F 1 "D_SMALL" H 4750 2095 50  0000 L CNN
+F 2 "" V 4900 2175 50  0000 C CNN
+F 3 "" V 4900 2175 50  0000 C CNN
+	1    4900 2175
+	-1   0    0    1   
+$EndComp
+Connection ~ 4450 2175
+Wire Wire Line
+	5000 2175 6150 2175
+$Comp
+L LTC3864 IC?
+U 1 1 57229B40
+P 2975 4400
+F 0 "IC?" H 3075 5250 70  0000 C CNN
+F 1 "LTC3864" H 3025 5150 70  0000 C CNN
+F 2 "~" H 2975 4250 60  0000 C CNN
+F 3 "~" H 2975 4250 60  0000 C CNN
+	1    2975 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3850 2425 3850
+$Comp
+L C_Small C?
+U 1 1 5733949A
+P 2150 4150
+AR Path="/5733949A" Ref="C?"  Part="1" 
+AR Path="/56BA34F4/571E8A96/5733949A" Ref="C?"  Part="1" 
+F 0 "C?" V 2225 4200 50  0000 L CNN
+F 1 "100n" V 2225 3975 50  0000 L CNN
+F 2 "" H 2150 4150 50  0000 C CNN
+F 3 "" H 2150 4150 50  0000 C CNN
+	1    2150 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2425 4150 2250 4150
+$Comp
+L R_Small R?
+U 1 1 573394FB
+P 2150 4300
+F 0 "R?" V 2075 4325 50  0000 L CNN
+F 1 "36k" V 2075 4175 50  0000 L CNN
+F 2 "" H 2150 4300 50  0000 C CNN
+F 3 "" H 2150 4300 50  0000 C CNN
+	1    2150 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4300 2425 4300
+Wire Wire Line
+	2050 4150 1975 4150
+Wire Wire Line
+	1975 4150 1975 5275
+Wire Wire Line
+	1975 4300 2050 4300
+$Comp
+L PGND #PWR?
+U 1 1 57339603
+P 2975 5275
+F 0 "#PWR?" H 2975 5025 50  0001 C CNN
+F 1 "PGND" H 2975 5125 50  0000 C CNN
+F 2 "" H 2975 5275 50  0000 C CNN
+F 3 "" H 2975 5275 50  0000 C CNN
+	1    2975 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 5150 2975 5275
+$Comp
+L JUMPER3 JP?
+U 1 1 573396AE
+P 1400 4550
+F 0 "JP?" H 1450 4450 50  0000 L CNN
+F 1 "JUMPER3" H 1400 4650 50  0000 C BNN
+F 2 "" H 1400 4550 50  0000 C CNN
+F 3 "" H 1400 4550 50  0000 C CNN
+	1    1400 4550
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1400 4900 2425 4900
+Connection ~ 1975 4300
+Wire Wire Line
+	1500 4550 1825 4550
+Wire Wire Line
+	1825 4550 1825 4000
+Wire Wire Line
+	1825 4000 2425 4000
+Wire Wire Line
+	1400 4800 1400 4900
+Connection ~ 1975 4900
+Wire Wire Line
+	1400 4300 1400 4150
+Text HLabel 1175 4150 0    60   Input ~ 0
+SYNC
+Wire Wire Line
+	1400 4150 1175 4150
+$Comp
+L SGND #PWR?
+U 1 1 5733A792
+P 1975 5275
+F 0 "#PWR?" H 1975 5025 50  0001 C CNN
+F 1 "SGND" H 1975 5125 50  0000 C CNN
+F 2 "" H 1975 5275 50  0000 C CNN
+F 3 "" H 1975 5275 50  0000 C CNN
+	1    1975 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C2
+U 1 1 5778D322
+P 3500 2500
+F 0 "C2" H 3510 2570 50  0000 L CNN
+F 1 "3m3" H 3510 2420 50  0000 L CNN
+F 2 "" H 3500 2500 50  0000 C CNN
+F 3 "" H 3500 2500 50  0000 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2400 3500 2175
+Connection ~ 3500 2175
+Wire Wire Line
+	3500 2600 3500 2825
+Connection ~ 3500 2825
+Text HLabel 1650 1400 0    60   Input ~ 0
+DC_IN-
+Text HLabel 1650 850  0    60   Input ~ 0
+DC_IN+
+$EndSCHEMATC

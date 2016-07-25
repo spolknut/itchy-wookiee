@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:bench_power_supply-rescue
 LIBS:my_library
 LIBS:power
 LIBS:device
@@ -11,7 +12,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -32,13 +32,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:my_transistors
 LIBS:bench_power_supply-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title "ROOT"
-Date "24 apr 2016"
+Date "11 may 2016"
 Rev ""
 Comp ""
 Comment1 ""
@@ -67,34 +67,35 @@ $EndSheet
 $Sheet
 S 4550 1400 1600 4550
 U 56BA34F4
-F0 "PRE_REGULATOR_MODULE" 50
-F1 "pre_regulator_module.sch" 50
-F2 "+5V_K3.1" I R 6150 4500 60 
+F0 "POWER_MODULE" 50
+F1 "power_module.sch" 50
+F2 "+5V_K3.1" O R 6150 4500 60 
 F3 "SyncIn_K3.2" I R 6150 4650 60 
 F4 "PGnd_K3.3" I R 6150 4800 60 
 F5 "TempThr_K5.1" I R 6150 5700 60 
 F6 "TempDis_K5.2" O R 6150 5850 60 
-F7 "+5V_K1.2" O R 6150 1650 60 
-F8 "PwrMonitor_K1.1" O R 6150 1500 60 
-F9 "TempFreq_K1.3" O R 6150 1800 60 
-F10 "POut_K1.15" O R 6150 3900 60 
-F11 "POut_K1.14" O R 6150 3750 60 
-F12 "POut_K1.17" O R 6150 4200 60 
-F13 "POut_K1.16" O R 6150 4050 60 
-F14 "PGnd_K1.11" O R 6150 3150 60 
-F15 "PGnd_K1.10" O R 6150 3000 60 
-F16 "PGnd_K1.13" O R 6150 3450 60 
-F17 "PGnd_K1.12" O R 6150 3300 60 
-F18 "PowerOnOff_K1.9" O R 6150 2700 60 
-F19 "V-_K1.4" O R 6150 1950 60 
-F20 "V+_K1.6" O R 6150 2250 60 
-F21 "VIn+_K1.7" O R 6150 2400 60 
-F22 "VIn-_K1.8" O R 6150 2550 60 
+F7 "+5V_K2.2" O R 6150 1650 60 
+F8 "PwrMonitor_K2.1" O R 6150 1500 60 
+F9 "TempFreq_K2.3" O R 6150 1800 60 
+F10 "POut_K2.15" O R 6150 3900 60 
+F11 "POut_K2.14" O R 6150 3750 60 
+F12 "POut_K2.17" O R 6150 4200 60 
+F13 "POut_K2.16" O R 6150 4050 60 
+F14 "PGnd_K2.11" O R 6150 3150 60 
+F15 "PGnd_K2.10" O R 6150 3000 60 
+F16 "PGnd_K2.13" O R 6150 3450 60 
+F17 "PGnd_K2.12" O R 6150 3300 60 
+F18 "PowerOnOff_K2.9" O R 6150 2700 60 
+F19 "V-_K2.4" O R 6150 1950 60 
+F20 "V+_K2.6" O R 6150 2250 60 
+F21 "+9V_K2.7" O R 6150 2400 60 
+F22 "-9V_K2.8" O R 6150 2550 60 
 F23 "+5vSlave_K4.1" I R 6150 5100 60 
 F24 "SyncOut_K4.2" O R 6150 5250 60 
 F25 "PGndSlave_K4.3" I R 6150 5400 60 
-F26 "K1.5" O R 6150 2100 60 
-F27 "AC1_K2.1" I L 4550 3050 60 
-F28 "AC2_K2.2" I L 4550 3200 60 
+F26 "K2.5" O R 6150 2100 60 
+F27 "AC1_K1.1" I L 4550 3050 60 
+F28 "AC2_K1.2" I L 4550 3200 60 
+F29 "DcOut_K2.18" O R 6150 4350 60 
 $EndSheet
 $EndSCHEMATC

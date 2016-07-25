@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:bench_power_supply-rescue
 LIBS:my_library
 LIBS:power
 LIBS:device
@@ -11,7 +12,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -32,13 +32,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:my_transistors
 LIBS:bench_power_supply-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title ""
-Date "24 apr 2016"
+Date "11 may 2016"
 Rev ""
 Comp ""
 Comment1 ""
