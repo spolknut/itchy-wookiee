@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: Sun 01 May 2016 03:14:34 PM CEST
+EESchema-DOCLIB  Version 2.0
 #
 $CMP LM317LZ
 D 0.5A 35V Adjustable Linear Regulator, TO-39
@@ -20,10 +20,20 @@ $CMP SCR
 D Thyristor
 $ENDCMP
 #
+$CMP SGND
+K POWER, PWR
+$ENDCMP
+#
 $CMP STPS15H100
 D Dual schotty rectifier, 2 x 7.5A, 100V, 0.62Vf
 K Dual schotty rectifier
 F http://www2.st.com/content/ccc/resource/technical/document/datasheet/da/03/9a/72/53/b3/4e/f2/CD00002831.pdf/files/CD00002831.pdf/jcr:content/translations/en.CD00002831.pdf
+$ENDCMP
+#
+$CMP SUD19P06-60
+D 60V Vds 18.3A Id, P-Channel MOSFET, TO-252
+K P-Channel MOSFET
+F http://www.mouser.com/ds/2/427/sud19p06-279735.pdf
 $ENDCMP
 #
 $CMP TLC555
